@@ -12,12 +12,12 @@
 </head>
 
 <body>
-    <h1 id="header">Dylan Gazda's Website</h1>
+    <h1 id="header" class="TXT">Dylan Gazda's Website</h1>
 
-    <h4 style="text-align:center"><i>Welcome to my site. Explore my site using the navigation links below!</i></h4>
+    <h4 style="text-align:center" class="TXT"><i>Welcome to my site. Explore my site using the navigation links below!</i></h4>
 
     <!-- Navigation Bar, styled with the hyperlink class -->
-    <nav>
+    <nav class="BG">
         <a href="./DylanGazda_Website.html" , class="hyperlink">Home</a>
         <a href="./Goals.html" , class="hyperlink">Goals</a>
         <a href="./Achievements.html" , class="hyperlink">Achievements</a>
@@ -26,8 +26,42 @@
     </nav>
 
     <br>
-    <h2>Profile Page</h2>
-    <hr style="border-top: 4px solid #005effde">
+    <h2 class="TXT">My Achievements</h2>
+    <hr style="border-top: 4px solid #005effde" class="BR">
+
+    <h4 class="TXT"><b>Github Work...</b>
+        <img src="Git.jpg" alt="" style="width: 
+    320px; height: 180px; float: right; padding-top: 10px; padding-right: 35px"></h4>
+    <div>
+        <ul>
+            You can view all of my projects and my public work on my Github page, linked below.
+            <br><br>
+            <li> My Github:
+                <a href="https://www.github.com/Dylan246" target="_blank">Dylan246 Github</a></p>
+            </li>
+        </ul>
+    </div>
+
+    <br><br><br><br>
+    <p class="BG"><i>Send any feedback or questions to my email:</i></p>
+    <p class="ptagcustom"><i><a href = "mailto: dgazda@mail.bradley.edu">dgazda@mail.bradley.edu</a></i></p>
+    <br>
+
+    <!--Print the page-->
+    <h4 style="text-align: center">
+        <button onclick="window.print()" class="BG">Print this page</button>
+    </h4>
+
+    <!--Change page color-->
+    <h4 style=" text-align: center ">
+        <button onclick="Colorize() " class="BG ">Pick a random site color!</button>
+        <script src="Script.js "></script> <br>
+    </h4>
+
+    <!--Sends you to the header-->
+    <a href="#header" , class="up">Go to Top</a>
+    <br> <br> <br> <br>
+
 </body>
 
 </html>

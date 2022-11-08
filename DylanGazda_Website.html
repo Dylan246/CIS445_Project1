@@ -11,12 +11,12 @@
 </head>
 
 <body>
-    <h1 id="header">Dylan Gazda's Website</h1>
+    <h1 id="header" class="TXT">Dylan Gazda's Website</h1>
 
-    <h4 style="text-align:center"><i>Welcome to my site. Explore my site using the navigation links below!</i></h4>
+    <h4 style="text-align:center" class="TXT"><i>Welcome to my site. Explore my site using the navigation links below!</i></h4>
 
     <!-- Navigation Bar, styled with the hyperlink class -->
-    <nav>
+    <nav class="BG">
         <a href="./DylanGazda_Website.html" , class="hyperlink">Home</a>
         <a href="./Goals.html" , class="hyperlink">Goals</a>
         <a href="./Achievements.html" , class="hyperlink">Achievements</a>
@@ -25,16 +25,16 @@
     </nav>
 
     <br>
-    <h2>Profile Page</h2>
-    <hr style="border-top: 4px solid #005effde">
+    <h2 class="TXT">Profile Page</h2>
+    <hr style="border-top: 4px solid #005effde" , class="BR">
 
-    <!-- Sliding Text -->
-    <marquee direction="right">
+    <!-- Sliding Text (REMOVED) -->
+    <!-- <marquee direction="right">
         <h3><i>Welcome to my page!</i></h3>
-    </marquee>
+    </marquee> -->
 
-    <h4><b>About me...</b><img src="Chicago.jpg" alt="" style="width: 
-        400px; height: 220px; float: right;"></h4>
+    <h4 class="TXT"><b>About me...</b><img src="Chicago.jpg" alt="" style="width: 
+        380px; height: 200px; float: right; padding-right: 25px"></h4>
 
     <div>
         <ul>
@@ -49,9 +49,11 @@
             </li>
         </ul>
     </div>
-    <br>
+    <br> <br>
 
-    <h4><b>Values & beliefs...</b></h4>
+    <h4 class="TXT"><b>Values & Beliefs...</b>
+        <img src="Bradley.png" alt="" style="width: 
+        220px; height: 120px; float: right; padding-top: 40px; padding-right: 25px"></h4>
     <div>
         <ul>
             <li>
@@ -68,37 +70,44 @@
 
     <br>
 
-    <h4><b>Career Aspirations...</b>
-        <img src="Bradley.png" alt="" style="width: 
-        200px; height: 120px; float: right;"></h4>
+    <h4 class="TXT"><b>Career Aspirations...</b>
+        <img src=" Code.png " alt=" " style="width: 300px; height: 200px; float: right; padding-top: 20px; padding-right: 25px "></h4>
     <div>
         <ul>
             I aspire to have a career in database management or computer systems analytics. I also want my future career to be something that I enjoy and believe is making a positive impact on the world.
         </ul>
     </div>
 
-    <h4><b>Hobbies & Interests...</b></h4>
+    <h4 class="TXT "><b>Hobbies & Interests...</b></h4>
     <dl>
         <b>Game design</b>
-        <dd>- I love working on small game development projects in my free time with friends</dd>
+        <dd id="dd1"></dd>
         <b>Swimming</b>
-        <dd>- I enjoy swimming in my pool during the summer</dd>
+        <dd id="dd2"></dd>
         <b>Computers</b>
-        <dd>- I like to take computers apart, upgrade them, and make my own modifications</dd>
+        <dd id="dd3"></dd>
+        <button onclick="ShowMore1()" id="b1" class="BG">Click here to show details</button>
+        <script src="Script.js "></script> <br>
     </dl>
 
-    <br>
-    <p><i>If you have any questions, you can reach me at:</i></p>
-    <p class="ptagcustom"><i><a href = "mailto: dgazda@mail.bradley.edu">dgazda@mail.bradley.edu</a></i></p>
+    <br><br><br>
+    <p class="BG "><i>Send any feedback or questions to my email:</i></p>
+    <p class="ptagcustom "><i><a href = "mailto: dgazda@mail.bradley.edu ">dgazda@mail.bradley.edu</a></i></p>
     <br>
 
     <!--Print the page-->
-    <h4 style="text-align: center">
-        <button onclick="window.print()">Print this page</button>
+    <h4 style="text-align: center ">
+        <button onclick="window.print() " class="BG">Print this page</button>
+    </h4>
+
+    <!--Change page color-->
+    <h4 style=" text-align: center ">
+        <button onclick="Colorize() " class="BG">Pick a random site color!</button>
+        <script src="Script.js "></script> <br>
     </h4>
 
     <!--Sends you to the header-->
-    <a href="#header" , class="up">Go to Top</a>
+    <a href="#header " , class="up">Go to Top</a>
     <br> <br> <br> <br>
 </body>
 

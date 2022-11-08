@@ -12,12 +12,12 @@
 </head>
 
 <body>
-    <h1 id="header">Dylan Gazda's Website</h1>
+    <h1 id="header" class="TXT">Dylan Gazda's Website</h1>
 
-    <h4 style="text-align:center"><i>Welcome to my site. Explore my site using the navigation links below!</i></h4>
+    <h4 style="text-align:center" class="TXT"><i>Welcome to my site. Explore my site using the navigation links below!</i></h4>
 
     <!-- Navigation Bar, styled with the hyperlink class -->
-    <nav>
+    <nav class="BG">
         <a href="./DylanGazda_Website.html" , class="hyperlink">Home</a>
         <a href="./Goals.html" , class="hyperlink">Goals</a>
         <a href="./Achievements.html" , class="hyperlink">Achievements</a>
@@ -26,11 +26,11 @@
     </nav>
 
     <br>
-    <h2>My Qualifications</h2>
-    <hr style="border-top: 4px solid #005effde">
+    <h2 class="TXT">My Qualifications</h2>
+    <hr style="border-top: 4px solid #005effde" class="BR">
 
 
-    <h4><b>My skills...</b> <img src="C.png" alt="" style="width: 
+    <h4 class="TXT"><b>My skills...</b> <img src="C.png" alt="" style="width: 
         240px; height: 140px; float: right; padding-top: 30px; padding-right: 35px"></h4>
 
     <div>
@@ -48,7 +48,7 @@
     </div>
     <br>
 
-    <h4><b>My professional qualities...</b> <img src="Communication.png" alt="" style="width: 
+    <h4 class="TXT"><b>My professional qualities...</b> <img src="Communication.png" alt="" style="width: 
         240px; height: 160px; float: right; padding-top: 20px; padding-right: 35px"></h4>
 
     <div>
@@ -66,7 +66,7 @@
     </div>
     <br>
 
-    <h4><b>My personal qualities...</b> <img src="Clip.png" alt="" style="width: 
+    <h4 class="TXT"><b>My personal qualities...</b> <img src="Clip.png" alt="" style="width: 
         180px; height: 150px; float: right; padding-top: 20px; padding-right: 55px"></h4>
 
     <div>
@@ -75,14 +75,33 @@
                 I am very organized and pay attention to perfecting small details
             </li>
             <li>
-                I believe in honesty and being truthful
+                I am always honest and truthful
             </li>
             <li>
                 I am hardworking and I never give up especially during challeneges in my life
             </li>
         </ul>
     </div>
+
+    <br><br>
+    <p class="BG"><i>Send any feedback or questions to my email:</i></p>
+    <p class="ptagcustom"><i><a href = "mailto: dgazda@mail.bradley.edu">dgazda@mail.bradley.edu</a></i></p>
     <br>
+
+    <!--Print the page-->
+    <h4 style="text-align: center">
+        <button onclick="window.print()" class="BG">Print this page</button>
+    </h4>
+
+    <!--Change page color-->
+    <h4 style=" text-align: center ">
+        <button onclick="Colorize() " class="BG ">Pick a random site color!</button>
+        <script src="Script.js "></script> <br>
+    </h4>
+
+    <!--Sends you to the header-->
+    <a href="#header" , class="up">Go to Top</a>
+    <br> <br> <br> <br>
 </body>
 
 </html>
